@@ -4,7 +4,7 @@
   #ifdef VS
     attribute vec3 position;
     uniform mat4 _matPVM;
-    @{type:"float", default:"5."}
+    @{type:"float", default:"2.5."}
     uniform float pointSize;
     void main(){
       gl_PointSize = pointSize;

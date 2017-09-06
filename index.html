@@ -9,36 +9,54 @@
 <body>
   <script type="text/goml">
     <goml>
-      <geometry name="point" type="point"></geometry>
-      <geometry name="point-quad" type="point-quad"></geometry>
-      <geometry name="point-rectangle" type="point-rectangle"></geometry>
-      <geometry name="point-cube" type="point-cube"></geometry>
-      <geometry name="point-frame-cube" type="point-frame-cube"></geometry>
-      <geometry name="point-sphere" type="point-sphere"></geometry>
-      <geometry name="point-x-axis" type="point-x-axis"></geometry>
-      <geometry name="point-y-axis" type="point-y-axis"></geometry>
-      <geometry name="point-z-axis" type="point-z-axis"></geometry>
-      <geometry name="point-frame-circle" type="point-frame-circle"></geometry>
-      <geometry name="point-circle" type="point-circle"></geometry>
-      <geometry name="point-cylinder" type="point-cylinder"></geometry>
+      <geometry name="point" type="point" />
+      <geometry name="point-quad" type="point-quad" />
+      <geometry name="point-triangle" type="point-triangle" />
+      <geometry name="point-heart" type="point-heart" />
+      <geometry name="point-torus" type="point-torus" />
+      <geometry name="point-rectangle" type="point-rectangle" />
+      <geometry name="point-cube" type="point-cube" />
+      <geometry name="point-frame-cube" type="point-frame-cube" />
+      <geometry name="point-sphere" type="point-sphere" />
+      <geometry name="point-x-axis" type="point-x-axis" />
+      <geometry name="point-y-axis" type="point-y-axis" />
+      <geometry name="point-z-axis" type="point-z-axis" />
+      <geometry name="point-frame-circle" type="point-frame-circle" />
+      <geometry name="point-circle" type="point-circle" />
+      <geometry name="point-cylinder" type="point-cylinder" />
+      <geometry name="point-cone" type="point-cone" />
+      <geometry name="point-capsule" type="point-capsule" />
+      <geometry name="point-box" type="point-box" />
+      <geometry name="point-arc" type="point-arc" />
+      <geometry name="point-frame-arc" type="point-frame-arc" />
       <scene>
         <camera>
           <camera.components>
             <MouseCameraControl></MouseCameraControl>
           </camera.components>
         </camera>
-        <point-cloud ></point-cloud>
-        <point-cloud geometry="point-quad" pointSize="2" color="orange"></point-cloud>
-        <point-cloud geometry="point-rectangle" pointSize="2" color="orange"></point-cloud>
-        <point-cloud geometry="point-cube" pointSize="2"></point-cloud>
-        <point-cloud geometry="point-frame-cube" pointSize="2"></point-cloud>
-        <point-cloud geometry="point-sphere" pointSize="2"></point-cloud>
-        <point-cloud geometry="point-x-axis" pointSize="2" color="orange"></point-cloud>
-        <point-cloud geometry="point-y-axis" pointSize="2" color="orange"></point-cloud>
-        <point-cloud geometry="point-z-axis" pointSize="2" color="orange"></point-cloud>
-        <point-cloud geometry="point-frame-circle" pointSize="2" color="green"></point-cloud>
-        <point-cloud geometry="point-circle" pointSize="10" color="gray"></point-cloud>
-        <point-cloud geometry="point-cylinder" pointSize="2" color="green"></point-cloud>
+        <point-cloud position="0,0,0" geometry="point-quad" />
+        <point-cloud position="2,0,0" geometry="point-rectangle" />
+        <point-cloud position="0,2,0" geometry="point-x-axis" />
+        <point-cloud position="0,0,2" geometry="point-y-axis" />
+        <point-cloud position="-2,0,0" geometry="point-z-axis" />
+        <point-cloud position="0,-2,0" geometry="point-frame-circle" />
+        <point-cloud position="0,0,-2" geometry="point-circle" />
+        <point-cloud position="-2,2,0" geometry="point-cylinder" />
+        <point-cloud position="2,-2,0" geometry="point-torus" />
+
+        <point-cloud position="0,-2,2" geometry="point-cone" />
+        <point-cloud position="0,2,-2" geometry="point-capsule" />
+        <point-cloud position="-2,0,2" geometry="point-heart" />
+        <point-cloud position="2,0,-2" geometry="point-sphere" />
+        <point-cloud position="2,2,0" geometry="point-triangle" />
+        <point-cloud position="0,2,2" geometry="point-cube" />
+        <point-cloud position="2,0,2" geometry="point-frame-cube" />
+        <point-cloud position="-2,-2,0" geometry="point-box" />
+        <point-cloud position="0,-2,-2" geometry="point-arc" />
+
+        <point-cloud position="-2,0,-2" geometry="point-frame-arc" />
+
       </scene>
     </goml>
   </script>
