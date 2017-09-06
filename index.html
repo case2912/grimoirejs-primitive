@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://unpkg.com/grimoirejs-preset-basic/register/grimoire-preset-basic.js"></script>
+  <script src="./register/grimoire-primitive.js"></script>
+</head>
+
+<body>
+  <script type="text/goml">
+    <goml>
+      <geometry name="point" type="point"></geometry>
+      <geometry name="point-quad" type="point-quad"></geometry>
+      <geometry name="point-rectangle" type="point-rectangle"></geometry>
+      <geometry name="point-cube" type="point-cube"></geometry>
+      <geometry name="point-frame-cube" type="point-frame-cube"></geometry>
+      <geometry name="point-sphere" type="point-sphere"></geometry>
+      <geometry name="point-x-axis" type="point-x-axis"></geometry>
+      <geometry name="point-y-axis" type="point-y-axis"></geometry>
+      <geometry name="point-z-axis" type="point-z-axis"></geometry>
+      <geometry name="point-frame-circle" type="point-frame-circle"></geometry>
+      <geometry name="point-circle" type="point-circle"></geometry>
+      <geometry name="point-cylinder" type="point-cylinder"></geometry>
+      <scene>
+        <camera>
+          <camera.components>
+            <MouseCameraControl></MouseCameraControl>
+          </camera.components>
+        </camera>
+        <point-cloud ></point-cloud>
+        <point-cloud geometry="point-quad" pointSize="2" color="orange"></point-cloud>
+        <point-cloud geometry="point-rectangle" pointSize="2" color="orange"></point-cloud>
+        <point-cloud geometry="point-cube" pointSize="2"></point-cloud>
+        <point-cloud geometry="point-frame-cube" pointSize="2"></point-cloud>
+        <point-cloud geometry="point-sphere" pointSize="2"></point-cloud>
+        <point-cloud geometry="point-x-axis" pointSize="2" color="orange"></point-cloud>
+        <point-cloud geometry="point-y-axis" pointSize="2" color="orange"></point-cloud>
+        <point-cloud geometry="point-z-axis" pointSize="2" color="orange"></point-cloud>
+        <point-cloud geometry="point-frame-circle" pointSize="2" color="green"></point-cloud>
+        <point-cloud geometry="point-circle" pointSize="10" color="gray"></point-cloud>
+        <point-cloud geometry="point-cylinder" pointSize="2" color="green"></point-cloud>
+      </scene>
+    </goml>
+  </script>
+</body>
+
+</html>
