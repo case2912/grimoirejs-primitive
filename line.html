@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://unpkg.com/grimoirejs-preset-basic/register/grimoire-preset-basic.js"></script>
+  <script src="./register/grimoire-primitive.js"></script>
+</head>
+
+<body>
+  <script type="text/goml">
+    <goml>
+      <geometry name="line" type="line" />
+      <geometry name="line-quad" type="line-quad" />
+      <geometry name="line-triangle" type="line-triangle" />
+      <geometry name="line-heart" type="line-heart" />
+      <geometry name="line-torus" type="line-torus" />
+      <geometry name="line-rectangle" type="line-rectangle" />
+      <geometry name="line-cube" type="line-cube" />
+      <geometry name="line-frame-cube" type="line-frame-cube" />
+      <geometry name="line-sphere" type="line-sphere" />
+      <geometry name="line-x-axis" type="line-x-axis" />
+      <geometry name="line-y-axis" type="line-y-axis" />
+      <geometry name="line-z-axis" type="line-z-axis" />
+      <geometry name="line-frame-circle" type="line-frame-circle" />
+      <geometry name="line-circle" type="line-circle" />
+      <geometry name="line-cylinder" type="line-cylinder" />
+      <geometry name="line-cone" type="line-cone" />
+      <geometry name="line-capsule" type="line-capsule" />
+      <geometry name="line-box" type="line-box" />
+      <geometry name="line-arc" type="line-arc" />
+      <geometry name="line-frame-arc" type="line-frame-arc" />
+      <scene>
+        <camera>
+          <camera.components>
+            <MouseCameraControl></MouseCameraControl>
+          </camera.components>
+        </camera>
+        <line position="0,0,0" geometry="line-quad" />
+        <line position="2,0,0" geometry="line-rectangle" />
+        <line position="0,2,0" geometry="line-x-axis" />
+        <line position="0,0,2" geometry="line-y-axis" />
+        <line position="-2,0,0" geometry="line-z-axis" />
+        <line position="0,-2,0" geometry="line-frame-circle" />
+        <line position="0,0,-2" geometry="line-circle" />
+        <line position="-2,2,0" geometry="line-cylinder" />
+        <line position="2,-2,0" geometry="line-torus" />
+
+        <line position="0,-2,2" geometry="line-cone" />
+        <line position="0,2,-2" geometry="line-capsule" />
+        <line position="-2,0,2" geometry="line-heart" />
+        <line position="2,0,-2" geometry="line-sphere" />
+        <line position="2,2,0" geometry="line-triangle" />
+        <line position="0,2,2" geometry="line-cube" />
+        <line position="2,0,2" geometry="line-frame-cube" />
+        <line position="-2,-2,0" geometry="line-box" />
+        <line position="0,-2,-2" geometry="line-arc" />
+        <line position="-2,0,-2" geometry="line-frame-arc" />
+
+      </scene>
+    </goml>
+  </script>
+</body>
+
+</html>
